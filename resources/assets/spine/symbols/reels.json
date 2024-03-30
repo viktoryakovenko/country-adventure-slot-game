@@ -1,0 +1,89 @@
+{
+"skeleton": {
+	"hash": "JdC2zgW3fto",
+	"spine": "4.0-from-4.1.17",
+	"x": -23.13,
+	"y": -851.72,
+	"width": 1442.94,
+	"height": 872.44,
+	"images": "../atlases/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "root_offset", "parent": "root", "x": 709.31, "y": -429.72 },
+	{ "name": "reells", "parent": "root_offset" },
+	{ "name": "bg", "parent": "reells" },
+	{ "name": "fg", "parent": "reells", "x": 3.5 },
+	{ "name": "replacments", "parent": "reells" },
+	{ "name": "reels1", "parent": "replacments", "x": -460, "y": 375 },
+	{ "name": "reels2", "parent": "replacments", "x": -222, "y": 375 },
+	{ "name": "reels3", "parent": "replacments", "x": 20, "y": 375 },
+	{ "name": "reels4", "parent": "replacments", "x": 262, "y": 375 },
+	{ "name": "reels5", "parent": "replacments", "x": 490, "y": 375 },
+	{ "name": "reels", "parent": "replacments", "x": -707.44, "y": 425.44 },
+	{ "name": "mask", "parent": "reells" }
+],
+"slots": [
+	{ "name": "bg", "bone": "bg", "attachment": "bg" },
+	{ "name": "mask", "bone": "mask" },
+	{ "name": "reels_content1", "bone": "reels1", "attachment": "dev/cross" },
+	{ "name": "reels_content2", "bone": "reels2", "attachment": "dev/cross" },
+	{ "name": "reels_content3", "bone": "reels3", "attachment": "dev/cross" },
+	{ "name": "reels_content4", "bone": "reels4", "attachment": "dev/cross" },
+	{ "name": "reels_content5", "bone": "reels5", "attachment": "dev/cross" },
+	{ "name": "reels/reels_foreground", "bone": "fg" },
+	{ "name": "reels_content", "bone": "reels", "attachment": "dev/cross" },
+	{ "name": "fg", "bone": "fg", "attachment": "fg" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"reels_content": {
+				"dev/cross": { "width": 50, "height": 50 }
+			},
+			"reels_content1": {
+				"dev/cross": { "width": 50, "height": 50 }
+			},
+			"reels_content2": {
+				"dev/cross": { "width": 50, "height": 50 }
+			},
+			"reels_content3": {
+				"dev/cross": { "width": 50, "height": 50 }
+			},
+			"reels_content4": {
+				"dev/cross": { "width": 50, "height": 50 }
+			},
+			"reels_content5": {
+				"dev/cross": { "width": 50, "height": 50 }
+			}
+		}
+	},
+	{
+		"name": "fs",
+		"attachments": {
+			"bg": {
+				"bg": { "name": "reels/reels_free", "width": 1242, "height": 740 }
+			},
+			"fg": {
+				"fg": { "name": "reels/reels_free_foreground", "width": 1414, "height": 844 }
+			}
+		}
+	},
+	{
+		"name": "main",
+		"attachments": {
+			"bg": {
+				"bg": { "name": "reels/reels", "width": 1242, "height": 740 }
+			},
+			"fg": {
+				"fg": { "name": "reels/reels_foreground", "width": 1414, "height": 844 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {}
+}
+}

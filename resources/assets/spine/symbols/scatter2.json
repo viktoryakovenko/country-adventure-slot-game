@@ -1,0 +1,131 @@
+{
+"skeleton": {
+	"hash": "YSgCNhOvYW4",
+	"spine": "4.0-from-4.1.17",
+	"x": -102,
+	"y": -99,
+	"width": 204,
+	"height": 198,
+	"images": "../atlases/wildbonus/",
+	"audio": "../../assets/"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "coin", "parent": "root" }
+],
+"slots": [
+	{ "name": "coin", "bone": "coin", "attachment": "scatter2-1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"coin": {
+				"scatter2-1": { "width": 204, "height": 198 },
+				"scatter2-2": { "width": 198, "height": 198 },
+				"scatter2-3": { "x": 0.5, "width": 179, "height": 198 },
+				"scatter2-4": { "x": 0.5, "width": 159, "height": 198 },
+				"scatter2-5": { "x": 0.5, "y": 0.5, "width": 121, "height": 199 },
+				"scatter2-6": { "x": 0.5, "width": 53, "height": 212 },
+				"scatter2-7": { "x": 0.5, "y": 0.5, "width": 121, "height": 199 },
+				"scatter2-8": { "x": 0.5, "width": 159, "height": 198 },
+				"scatter2-9": { "x": 0.5, "width": 179, "height": 198 },
+				"scatter2-10": { "width": 198, "height": 198 }
+			}
+		}
+	}
+],
+"animations": {
+	"jump": {
+		"slots": {
+			"coin": {
+				"attachment": [
+					{ "name": "scatter2-1" },
+					{ "time": 0.1, "name": "scatter2-2" },
+					{ "time": 0.2, "name": "scatter2-3" },
+					{ "time": 0.3, "name": "scatter2-4" },
+					{ "time": 0.4, "name": "scatter2-5" },
+					{ "time": 0.5, "name": "scatter2-6" },
+					{ "time": 0.6, "name": "scatter2-7" },
+					{ "time": 0.7, "name": "scatter2-8" },
+					{ "time": 0.8, "name": "scatter2-9" },
+					{ "time": 0.9, "name": "scatter2-10" },
+					{ "time": 1, "name": "scatter2-1" }
+				]
+			}
+		},
+		"bones": {
+			"coin": {
+				"translate": [
+					{
+						"curve": [ 0.078, 0, 0.156, -200, 0.078, 0, 0.156, 200 ]
+					},
+					{
+						"time": 0.2333,
+						"x": -200,
+						"y": 200,
+						"curve": [ 0.322, -200, 0.678, 100, 0.322, 200, 0.678, -100 ]
+					},
+					{
+						"time": 0.7667,
+						"x": 100,
+						"y": -100,
+						"curve": [ 0.844, 100, 0.922, 0, 0.844, -100, 0.922, 0 ]
+					},
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"land": {
+		"slots": {
+			"coin": {
+				"attachment": [
+					{ "name": "scatter2-1" },
+					{ "time": 0.1, "name": "scatter2-2" },
+					{ "time": 0.2, "name": "scatter2-3" },
+					{ "time": 0.3, "name": "scatter2-4" },
+					{ "time": 0.4, "name": "scatter2-5" },
+					{ "time": 0.5, "name": "scatter2-6" },
+					{ "time": 0.6, "name": "scatter2-7" },
+					{ "time": 0.7, "name": "scatter2-8" },
+					{ "time": 0.8, "name": "scatter2-9" },
+					{ "time": 0.9, "name": "scatter2-10" },
+					{ "time": 1, "name": "scatter2-1" }
+				]
+			}
+		},
+		"bones": {
+			"coin": {
+				"translate": [
+					{
+						"curve": [ 0.078, 0, 0.156, 0, 0.078, 0, 0.156, 50 ]
+					},
+					{
+						"time": 0.2333,
+						"y": 50,
+						"curve": [ 0.322, 0, 0.678, 0, 0.322, 50, 0.678, -50 ]
+					},
+					{
+						"time": 0.7667,
+						"y": -50,
+						"curve": [ 0.844, 0, 0.922, 0, 0.844, -50, 0.922, 0 ]
+					},
+					{ "time": 1 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.167, 1, 0.333, 1, 0.167, 1, 0.333, 2 ]
+					},
+					{
+						"time": 0.5,
+						"y": 2,
+						"curve": [ 0.667, 1, 0.833, 1, 0.667, 2, 0.833, 1 ]
+					},
+					{ "time": 1 }
+				]
+			}
+		}
+	}
+}
+}

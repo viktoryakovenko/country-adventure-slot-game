@@ -1,0 +1,36 @@
+{
+"skeleton": {
+	"hash": "bTjdjSOsXko",
+	"spine": "4.0-from-4.1.17",
+	"x": -1001,
+	"y": -1784.86,
+	"width": 2002,
+	"height": 3569.73,
+	"images": "../",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "background", "parent": "root" }
+],
+"slots": [
+	{ "name": "atlases/initial/bg2", "bone": "background", "attachment": "atlases/initial/bg" },
+	{ "name": "atlases/initial/bg", "bone": "background", "attachment": "atlases/initial/bg" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"atlases/initial/bg": {
+				"atlases/initial/bg": { "width": 2002, "height": 1122 }
+			},
+			"atlases/initial/bg2": {
+				"atlases/initial/bg": { "scaleX": 1.7831, "scaleY": 1.7831, "rotation": 90, "width": 2002, "height": 1122 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

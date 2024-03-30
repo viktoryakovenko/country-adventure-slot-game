@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "ROBOTO_BOLD";
+    src: local("RobotoB"), url("./../fonts/RobotoB.ttf") format("ttf");
+}
+
+body {
+    background-color: #171717;
+    font-size: 24px;
+    font-family: "ROBOTO_BOLD", serif;
+}

@@ -1,0 +1,141 @@
+{
+"skeleton": {
+	"hash": "XZayxo9DodI",
+	"spine": "4.0-from-4.1.23",
+	"x": -372.44,
+	"y": -287,
+	"width": 743.06,
+	"height": 687.56,
+	"images": "../",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "x": -0.91, "y": 56.78, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "scatter_symbol", "parent": "root", "color": "585858ff" },
+	{ "name": "background", "parent": "root", "scaleX": 0.8003, "scaleY": 1.4502 },
+	{ "name": "backgroundInner", "parent": "background", "color": "ffffffff" },
+	{ "name": "title", "parent": "root", "y": -224.83 },
+	{ "name": "description", "parent": "root", "y": -283.83 }
+],
+"slots": [
+	{ "name": "bg", "bone": "root" },
+	{ "name": "back", "bone": "backgroundInner", "color": "ddba2aff", "dark": "000000", "attachment": "atlases/pop_up/enter_exit_fs_counter_star", "blend": "additive" },
+	{ "name": "scatter_symbol", "bone": "scatter_symbol", "attachment": "symbol" },
+	{ "name": "title", "bone": "title", "attachment": "title" },
+	{ "name": "description", "bone": "description", "attachment": "atlases/ui/lines_bet_bg" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"back": {
+				"atlases/pop_up/enter_exit_fs_counter_star": { "scaleX": 0.6685, "scaleY": 0.4367, "width": 1736, "height": 1357 }
+			},
+			"bg": {
+				"atlases/initial/bg": { "scaleX": 3, "scaleY": 3, "width": 1920, "height": 1080 }
+			},
+			"description": {
+				"atlases/ui/lines_bet_bg": { "y": -43.1, "width": 291, "height": 113 }
+			}
+		}
+	},
+	{
+		"name": "scatter",
+		"attachments": {
+			"scatter_symbol": {
+				"symbol": { "name": "symbols/BAR_3", "scaleX": 1.1, "scaleY": 1.1, "width": 267, "height": 267 }
+			},
+			"title": {
+				"title": { "name": "atlases/splash/scatter", "x": 3.64, "y": -7.06, "width": 307, "height": 70 }
+			}
+		}
+	},
+	{
+		"name": "wild",
+		"attachments": {
+			"scatter_symbol": {
+				"symbol": { "name": "symbols/diamond", "scaleX": 1.15, "scaleY": 1.15, "width": 261, "height": 245 }
+			},
+			"title": {
+				"title": {
+					"name": "atlases/splash/wild",
+					"x": 0.5,
+					"y": -2.63,
+					"scaleX": 1.2345,
+					"scaleY": 1.2345,
+					"width": 187,
+					"height": 69
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"bound": {
+		"bones": {
+			"backgroundInner": {
+				"scale": [
+					{ "x": 0.5, "y": 0.5 }
+				]
+			}
+		}
+	},
+	"idle": {
+		"slots": {
+			"back": {
+				"rgb2": [
+					{ "light": "fdfdfdff", "dark": "8a008f" },
+					{ "time": 1, "light": "5f5f5fff", "dark": "ff00eb" },
+					{ "time": 2, "light": "ffffffff", "dark": "5d0a65" }
+				],
+				"alpha": [
+					{ "value": 0.6663, "curve": "stepped" },
+					{ "time": 1, "value": 0.6667 },
+					{ "time": 2, "value": 0.4667 }
+				]
+			},
+			"scatter_symbol": {
+				"attachment": [
+					{ "time": 0.8, "name": "symbol" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"scale": [
+					{
+						"curve": [ 0.156, 1, 0.844, 1.02, 0.156, 1, 0.844, 1.02 ]
+					},
+					{
+						"time": 1,
+						"x": 1.02,
+						"y": 1.02,
+						"curve": [ 1.178, 1.02, 1.822, 1, 1.178, 1.02, 1.822, 1 ]
+					},
+					{ "time": 2 }
+				]
+			},
+			"backgroundInner": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 1, "curve": "stepped" },
+					{ "time": 2 }
+				],
+				"scale": [
+					{},
+					{ "time": 1, "x": 0.8, "y": 0.8 },
+					{ "time": 2 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 2,
+				"offsets": [
+					{ "slot": "scatter_symbol", "offset": 2 }
+				]
+			}
+		]
+	}
+}
+}

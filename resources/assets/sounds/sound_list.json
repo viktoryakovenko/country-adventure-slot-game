@@ -1,0 +1,23 @@
+{
+  "fail.mp3": "",
+  "success.mp3": "",
+  "btn_click.wav": "",
+  "relax_loop.wav": "loop",
+  "grass_step.wav": "",
+  "regular_step.wav": "",
+  "water_step.wav": "",
+  "anticipation.wav": "",
+  "custom-button.mp3": "",
+  "spin-button.mp3": "",
+  "coin.mp3": "",
+  "reel-spin.mp3": "loop",
+  "fs-game-loop.wav": "loop",
+  "fs-trasition1.aiff": "loop",
+  "fs-trasition2.wav": "loop",
+  "main-game-loop.wav": "loop",
+  "yeah.wav": "",
+  "wow.wav": "",
+  "wheel_win.mp3": "",
+  "short_swing.wav": "",
+  "swing.wav": ""
+}

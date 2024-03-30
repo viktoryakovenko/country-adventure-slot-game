@@ -1,0 +1,52 @@
+{
+    "defaultSpeedFactor": 1,
+    "forceSpeedFactor": 2,
+    "win": {
+        "duration": {
+            "low": 0.5,
+            "medium": 0.75,
+            "big": 1.0,
+            "super": 1.25,
+            "epic": 2.5
+        }
+    },
+    "reels": {
+        "speed": 60,
+        "spinDelay": 0.1,
+        "stopDelay": 0.3,
+        "minSpinDuration": 1,
+        "anticipationDelay": 1.15
+    },
+    "reel": {
+        "spinDuration": 0.7,
+        "stopDuration": 0.4,
+        "firstStopDelay": 0.3,
+        "secondStopDelay": 0.2
+    },
+    "animations": {
+        "reelsShaking": {
+            "duration": {
+                "down": 0.1,
+                "up": 0.05
+            },
+            "yOffset": 20
+        },
+        "logoShaking": {
+            "duration": {
+                "down": 0.1,
+                "up": 0.05
+            },
+            "yOffset": 5
+        },
+        "backShaking": {
+            "duration": {
+                "down": 0.2,
+                "up": 0.1
+            },
+            "yOffset": 2.5
+        }
+    },
+    "popup": {
+        "generalTimeout": 0.5
+    }
+}

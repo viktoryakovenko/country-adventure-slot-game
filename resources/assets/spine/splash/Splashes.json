@@ -1,0 +1,17 @@
+{
+"skeleton": { "hash": "WcIiVGuxKZI", "spine": "4.1.17", "images": "C:/Users/ACER/Desktop/reskin/imsges/", "audio": "C:/Users/ACER/Desktop/reskin/json/" },
+"bones": [
+	{ "name": "root" }
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 4.6667 }
+				]
+			}
+		}
+	}
+}
+}

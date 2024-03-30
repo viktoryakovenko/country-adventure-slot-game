@@ -1,0 +1,19 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "module": "commonjs",
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "isolatedModules": false,
+        "strict": true,
+        "noImplicitAny": true,
+        "typeRoots" : [
+            "../node_modules/@types",
+            "../src/typing/index.d.ts"
+        ]
+    },
+    "include": [
+        "./**/*.ts",
+        "./../src/*"
+    ]
+}

@@ -1,0 +1,150 @@
+{
+"skeleton": {
+	"hash": "FbSRtFPQab0",
+	"spine": "4.0-from-4.1.17",
+	"x": -107,
+	"y": -107.5,
+	"width": 214,
+	"height": 221.08,
+	"images": "../atlases/wildbonus/",
+	"audio": "F:/programs/source/repos/TechArtInternship/resources"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "wildbonus", "parent": "root" },
+	{ "name": "bird", "parent": "wildbonus" },
+	{ "name": "body", "parent": "bird", "x": -14.85, "y": 17.5 },
+	{ "name": "feet", "parent": "bird", "y": 17.38 },
+	{ "name": "wing", "parent": "body", "x": 8.18, "y": 54.64 }
+],
+"slots": [
+	{ "name": "stump", "bone": "wildbonus", "attachment": "stump2" },
+	{ "name": "feet", "bone": "feet", "attachment": "feet" },
+	{ "name": "body", "bone": "body", "attachment": "body" },
+	{ "name": "wing", "bone": "wing", "attachment": "wing" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"feet": {
+				"feet": { "x": 1.59, "y": 2.44, "width": 61, "height": 103 }
+			},
+			"stump": {
+				"stump2": { "path": "stump", "width": 214, "height": 215 }
+			}
+		}
+	},
+	{
+		"name": "robin",
+		"attachments": {
+			"body": {
+				"body": { "name": "body1", "y": 46.08, "width": 141, "height": 100 }
+			},
+			"wing": {
+				"wing": { "name": "wing1", "x": -12.77, "y": -32.68, "width": 94, "height": 144 }
+			}
+		}
+	}
+],
+"animations": {
+	"flight": {
+		"slots": {
+			"stump": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"wing": {
+				"rotate": [
+					{},
+					{ "time": 0.0667, "value": -60 },
+					{ "time": 0.1333 },
+					{ "time": 0.2, "value": -60 },
+					{ "time": 0.2667 },
+					{ "time": 0.3333, "value": -60 },
+					{ "time": 0.4 }
+				]
+			}
+		}
+	},
+	"jump": {
+		"slots": {
+			"stump": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"body": {
+				"translate": [
+					{},
+					{ "time": 0.1, "y": -9.5 },
+					{ "time": 0.2, "curve": "stepped" },
+					{ "time": 1.8 },
+					{ "time": 1.9, "y": -17.5 },
+					{ "time": 2 }
+				],
+				"scale": [
+					{ "time": 0.3333 },
+					{ "time": 0.6333, "x": 0.9, "y": 1.1 },
+					{ "time": 0.8333, "curve": "stepped" },
+					{ "time": 1.1667 },
+					{ "time": 1.2667, "x": 0.967, "y": 1.033 },
+					{ "time": 1.3667, "curve": "stepped" },
+					{ "time": 1.8 },
+					{ "time": 1.9, "x": 1.1, "y": 0.9 },
+					{ "time": 2 }
+				]
+			},
+			"wing": {
+				"rotate": [
+					{},
+					{ "time": 0.2667, "value": -50 },
+					{ "time": 0.3333 },
+					{ "time": 0.4, "value": -60 },
+					{ "time": 0.4667 },
+					{ "time": 0.5333, "value": -60 },
+					{ "time": 0.6 },
+					{ "time": 0.6667, "value": -60 },
+					{ "time": 0.7333 },
+					{ "time": 0.8, "value": -60 },
+					{ "time": 0.8667 },
+					{ "time": 0.9333, "value": -60 },
+					{ "time": 1 },
+					{ "time": 1.0667, "value": -60 },
+					{ "time": 1.1333 },
+					{ "time": 1.2, "value": -60 },
+					{ "time": 1.2667 },
+					{ "time": 1.3333, "value": -60 },
+					{ "time": 1.4, "curve": "stepped" },
+					{ "time": 1.8, "curve": "stepped" },
+					{ "time": 2 }
+				]
+			},
+			"bird": {
+				"translate": [
+					{ "curve": "stepped" },
+					{
+						"time": 0.2,
+						"curve": [ 0.411, 0, 0.621, 0, 0.326, 39.11, 0.706, 150 ]
+					},
+					{ "time": 0.8321, "y": 150, "curve": "stepped" },
+					{
+						"time": 1.1667,
+						"y": 150,
+						"curve": [ 1.378, 0, 1.589, 0, 1.299, 150, 1.678, 37.73 ]
+					},
+					{ "time": 1.8, "curve": "stepped" },
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}

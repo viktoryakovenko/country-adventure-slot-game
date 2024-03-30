@@ -1,0 +1,38 @@
+{ "skeleton": { "images": "D:/Projects/country-adventure-slot-game/resources/origin.assets/atlases/grass/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "grassBackR", "bone": "root", "attachment": "grassBackR" },
+	{ "name": "grassFront1R", "bone": "root", "attachment": "grassFront1R" },
+	{ "name": "grassFront2R", "bone": "root", "attachment": "grassFront2R" },
+	{ "name": "grassBackL", "bone": "root", "attachment": "grassBackL" },
+	{ "name": "grassFront1L", "bone": "root", "attachment": "grassFront1L" },
+	{ "name": "grassFront2L", "bone": "root", "attachment": "grassFront2L" }
+],
+"skins": {
+	"default": {
+		"grassBackL": {
+			"grassBackL": { "x": 640.78, "y": -384.81, "scaleX": 0.6352, "scaleY": 0.5166, "width": 1227, "height": 645 }
+		},
+		"grassBackR": {
+			"grassBackR": { "x": 1610.97, "y": -370.44, "scaleX": 0.5523, "scaleY": 0.4491, "width": 1404, "height": 744 }
+		},
+		"grassFront1L": {
+			"grassFront1L": { "x": 118.75, "y": -20.1, "scaleX": 0.7778, "scaleY": 0.6325, "rotation": -86.7, "width": 365, "height": 496 }
+		},
+		"grassFront1R": {
+			"grassFront1R": { "x": 144.62, "y": -13.63, "scaleX": 0.7778, "scaleY": 0.6325, "rotation": -89.12, "width": 421, "height": 572	}
+		},
+		"grassFront2L": {
+			"grassFront2L": { "x": 254.53, "y": 75.81, "scaleX": 0.7778, "scaleY": 0.6325, "rotation": -90.7, "width": 739, "height": 914 }
+		},
+		"grassFront2R": {
+			"grassFront2R": { "x": 219.4, "y": -45.15, "scaleX": 0.656, "scaleY": 0.5335, "rotation": -79.35, "width": 852, "height": 1053 }
+		}
+
+	}
+},
+"animations": { "animation": {} }
+}

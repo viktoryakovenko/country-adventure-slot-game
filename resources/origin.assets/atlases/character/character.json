@@ -1,0 +1,45 @@
+{ "skeleton": { "images": "D:/Projects/country-adventure-slot-game/resources/origin.assets/atlases/character/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "arm_taking_hat", "bone": "root", "attachment": "arm_taking_hat" },
+	{ "name": "arm_back", "bone": "root", "attachment": "arm_back" },
+	{ "name": "body", "bone": "root", "attachment": "body" },
+	{ "name": "head", "bone": "root", "attachment": "head" },
+	{ "name": "hat", "bone": "root", "attachment": "hat" },
+	{ "name": "eye_back", "bone": "root", "attachment": "eye_back" },
+	{ "name": "eye_front", "bone": "root", "attachment": "eye_front" },
+	{ "name": "arm_front", "bone": "root", "attachment": "arm_front" }
+],
+"skins": {
+	"default": {
+		"arm_taking_hat": {
+			"arm_taking_hat": { "x": 351, "y": -441, "width": 334, "height": 342 }
+		},
+		"arm_back": {
+			"arm_back": { "x": 252, "y": -431, "width": 150, "height": 248 }
+		},
+		"bodyChar": {
+			"body": { "x": 311, "y": -371, "width": 328, "height": 430 }
+		},
+		"headChar": {
+			"head": { "x": 254.5, "y": -223, "width": 261, "height": 234 }
+		},
+		"hat": {
+			"hat": { "x": 252, "y": -173.5, "width": 276, "height": 155 }
+		},
+		"eye_back": {
+			"eye_back": { "x": 317, "y": -215, "width": 16, "height": 28 }
+		},
+		"eye_front": {
+			"eye_front": { "x": 264.5, "y": -222.5, "width": 23, "height": 33 }
+		},
+		"arm_front": {
+			"arm_front": { "x": 245, "y": -390.5, "width": 458, "height": 227 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

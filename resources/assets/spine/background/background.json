@@ -1,0 +1,73 @@
+{
+"skeleton": {
+	"hash": "I404qeokS1w",
+	"spine": "4.0-from-4.1.17",
+	"x": -26.32,
+	"y": -1089.41,
+	"width": 2002,
+	"height": 1224.76,
+	"images": "../",
+	"audio": "D:/SIGMA/Mystery_Forest"
+},
+"bones": [
+	{ "name": "root", "x": 961, "y": -540.39 },
+	{ "name": "base", "parent": "root" },
+	{ "name": "fallenLeaf", "parent": "base", "length": 62.68, "rotation": -142.25, "x": 478.52, "y": 615.86 }
+],
+"slots": [
+	{ "name": "background", "bone": "base", "attachment": "bg_main" },
+	{ "name": "fallenLeaf", "bone": "fallenLeaf", "attachment": "fallenLeaf" }
+],
+"skins": [
+	{
+		"name": "freespin",
+		"attachments": {
+			"background": {
+				"bg_main": { "name": "atlases/background/FreeSpin_BG", "x": 13.68, "y": 11.98, "width": 2002, "height": 1122 }
+			},
+			"fallenLeaf": {
+				"fallenLeaf": { "name": "atlases/background/fallenLeafEmpty", "width": 91, "height": 81 }
+			}
+		}
+	},
+	{
+		"name": "main",
+		"attachments": {
+			"background": {
+				"bg_main": { "name": "atlases/initial/bg", "x": 14.11, "y": 6.77, "width": 2002, "height": 1122 }
+			},
+			"fallenLeaf": {
+				"fallenLeaf": { "name": "atlases/background/fallenLeaf", "x": 28.33, "y": -4.27, "rotation": 142.25, "width": 91, "height": 81 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"background": {
+				"rgba": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.9667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"fallenLeaf": {
+				"rotate": [
+					{ "time": 0.2667 },
+					{ "time": 3.8667, "value": -46.42 },
+					{ "time": 7.9667, "value": 32.17 }
+				],
+				"translate": [
+					{ "time": 0.2667 },
+					{ "time": 3.8667, "x": -825.17, "y": -729.86 },
+					{ "time": 7.9667, "x": -682.66, "y": -1266.51 }
+				]
+			}
+		}
+	}
+}
+}

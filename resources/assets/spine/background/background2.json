@@ -1,0 +1,60 @@
+{
+"skeleton": {
+	"hash": "QydCk31KdhQ",
+	"spine": "4.0-from-4.1.17",
+	"y": -1122,
+	"width": 2002,
+	"height": 1122,
+	"images": "C:/Users/ACER/Desktop/reskin/imsges/",
+	"audio": "C:/Users/ACER/Desktop/reskin/json/"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "fallenLeaf", "parent": "root", "length": 62.68, "rotation": -142.25, "x": 1439.52, "y": 75.47 }
+],
+"slots": [
+	{ "name": "main_BG", "bone": "root", "attachment": "main_BG" },
+	{ "name": "fallenLeaf", "bone": "fallenLeaf", "attachment": "fallenLeaf" }
+],
+"skins": [
+	{
+		"name": "FreeSpin",
+		"attachments": {
+			"main_BG": {
+				"main_BG": { "name": "FreeSpin_BG", "x": 1001, "y": -561, "width": 2002, "height": 1122 }
+			}
+		}
+	},
+	{
+		"name": "main",
+		"attachments": {
+			"fallenLeaf": {
+				"fallenLeaf": { "x": 28.33, "y": -4.27, "rotation": 142.25, "width": 91, "height": 81 }
+			},
+			"main_BG": {
+				"main_BG": { "x": 1001, "y": -561, "width": 2002, "height": 1122 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"fallenLeaf": {
+				"rotate": [
+					{},
+					{ "time": 2, "value": -53.64, "curve": "stepped" },
+					{ "time": 2.6333, "value": -53.64 },
+					{ "time": 5, "value": -7.42 }
+				],
+				"translate": [
+					{},
+					{ "time": 2, "x": -778.37, "y": -495.33 },
+					{ "time": 2.6333, "x": -931.69, "y": -634.49 },
+					{ "time": 5, "x": 58.97, "y": -1252.48 }
+				]
+			}
+		}
+	}
+}
+}
